@@ -8,6 +8,7 @@ use Laravelify\Translator\Services\TranslationService;
 use Laravelify\Translator\Commands\TranslateScanCommand;
 use Laravelify\Translator\Commands\TranslateGenerateCommand;
 use Laravelify\Translator\Commands\TranslateRunCommand;
+use Laravelify\Translator\Commands\TranslateMissingCommand;
 
 class TranslatorServiceProvider extends ServiceProvider
 {
@@ -33,6 +34,7 @@ class TranslatorServiceProvider extends ServiceProvider
                 TranslateScanCommand::class,
                 TranslateGenerateCommand::class,
                 TranslateRunCommand::class,
+                TranslateMissingCommand::class, // bunu ekle
             ]);
         }
     }
